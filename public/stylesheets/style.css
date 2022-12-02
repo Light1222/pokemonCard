@@ -3,6 +3,23 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.card{
+  max-height: 300px;
+  max-width: 250px;
+  align-items: center;
+}
+
+.info-row.id{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.picture{
+  justify-content: center;
+  align-items: center;
+}
+
+.cardClassFairy {
+
 }
