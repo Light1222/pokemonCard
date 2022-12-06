@@ -1,10 +1,13 @@
 extends layout
 
 block content
-  div(class=`card ${cardclass}`)
-    div.info-row.id
-      p.title Basic
-      p.name Charmander
-      p.hp 60
-    div.picture
-      img(src='/images/charmander.png')
+  div.container
+    div.card
+      div.info-row.id
+        div.name Charmander
+        div.right
+          div.hp 60HP
+          div.type
+          img.fire(src='/images/fire-type.png')
+      div.picture
+        img(src='/images/charmander.png')

@@ -1,25 +1,43 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 .card{
-  max-height: 300px;
-  max-width: 250px;
+  height: 383px;
+  width: 264px;
   align-items: center;
+  border: 8px solid #fffc75;
+  border-radius: 8px;
+  background: #dc784d;
 }
 
 .info-row.id{
   display: flex;
-  align-items: center;
+  padding: 5px;
   justify-content: space-between;
 }
 
 .picture{
+  display: flex;
   justify-content: center;
+}
+
+.fire {
+  height: 20px;
+  width: 20px;
+}
+
+.right {
+  display: flex;
   align-items: center;
 }
 
 .cardClassFairy {
-
+background: #cc417e;
 }
+
+.hp {
+  padding-right: 4px;
+}
+
