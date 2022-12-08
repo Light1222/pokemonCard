@@ -34,7 +34,7 @@ body {
   margin: 10px;
 }
 
-.fire {
+.entype {
   height: 20px;
   width: 20px;
 }
@@ -53,15 +53,51 @@ background: #cc417e;
 }
 
 .move1{
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 13px;
+  padding: 10px;
+
 }
 .move2{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 13px;
+  padding: 10px;
+}
+
+.cardbN {
+  height: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 15px;
+}
+
+.weakN{
+  font: 13px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.resisN {
+  font: 13px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.retreatN {
+  font: 13px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.cardBottom {
+  height: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 12px;
+  margin: 22px;
+}
+
+.retreatN {
+  font: 13px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 

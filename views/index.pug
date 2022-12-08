@@ -1,6 +1,7 @@
 extends layout
 
 block content
+
   div.container
     div.card
       div.info-row.id
@@ -8,17 +9,28 @@ block content
         div.right
           div.hp 60HP
           div.type
-          img.fire(src='/images/fire-type.png')
+          img.entype(src='/images/fire-type.png')
       div.pic-head
         div.picture
           img.charmander(src='/images/charmander.png')
       div.move1
         div.energy
-          img.fire(src='/images/fire-type.png')
+          img.entype(src='/images/fire-type.png')
         div.mName Ember
         div.mDam 40
       div.move2
         div.energy2
-          img.fire(src='/images/fire-type.png')
+          img.entype(src='/images/fire-type.png')
         div.mName2 Quick Attack
         div.mDam2 50
+      div.cardbN
+        div.weakN Weakness
+        div.resisN Resistance
+        div.retreatN Retreat
+      div.cardBottom
+        div.resistance
+            img.entype(src='/images/water-type.png')
+        div.weak
+          img.entype(src='/images/fire-type.png')
+        div.retreat
+          img.entype(src='/images/normal-type.png')
