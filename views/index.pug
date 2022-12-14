@@ -1,7 +1,7 @@
 extends layout
 
 block content
-
+  h1 Pokemon Card Creator
   div.container
     div.card
       div.info-row.id
@@ -9,28 +9,27 @@ block content
         div.right
           div.hp 60HP
           div.type
-          img.entype(src='/images/fire-type.png')
+          img.entype(src=`/images/${card.type}-type.png`)
       div.pic-head
         div.picture
           img.charmander(src='/images/charmander.png')
       div.move1
         div.energy
-          img.entype(src='/images/fire-type.png')
+          img.entype(src=`/images/${card.type}-type.png`)
         div.mName Ember
         div.mDam 40
       div.move2
         div.energy2
-          img.entype(src='/images/fire-type.png')
+          img.entype(src=`/images/${card.type}-type.png`)
         div.mName2 Quick Attack
         div.mDam2 50
-      div.cardbN
-        div.weakN Weakness
-        div.resisN Resistance
-        div.retreatN Retreat
       div.cardBottom
-        div.resistance
-            img.entype(src='/images/water-type.png')
         div.weak
-          img.entype(src='/images/fire-type.png')
+          div.weakN Weakness
+          img.wentype(src=`/images/${card.type}-type.png`)
+        div.resistance
+          div.resisN Resistance
+          img.bentype(src=`/images/${card.type}-type.png`)
         div.retreat
-          img.entype(src='/images/normal-type.png')
+          div.retreatN Retreat
+          img.rentype(src=`/images/${card.type}-type.png`)

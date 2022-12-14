@@ -3,6 +3,10 @@ body {
   font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+.h1{
+  font: 15px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
 .card{
   height: 400px;
   width: 280px;
@@ -16,6 +20,10 @@ body {
   display: flex;
   padding: 5px;
   justify-content: space-between;
+}
+
+.hp {
+  padding-right: 4px;
 }
 
 .pic-head{
@@ -39,6 +47,30 @@ body {
   width: 20px;
 }
 
+.rentype {
+  height: 20px;
+  width: 20px;
+  align-items: center;
+  padding-left: 14px;
+  margin-top: 10px;
+}
+
+.wentype {
+  height: 20px;
+  width: 20px;
+  align-items: center;
+  padding-left: 22px;
+  margin-top: 10px;
+}
+
+.bentype {
+  height: 20px;
+  width: 20px;
+  align-items: center;
+  padding-left: 23px;
+  margin-top: 10px;
+}
+
 .right {
   display: flex;
   align-items: center;
@@ -46,10 +78,6 @@ body {
 
 .cardClassFairy {
 background: #cc417e;
-}
-
-.hp {
-  padding-right: 4px;
 }
 
 .move1{
@@ -93,8 +121,9 @@ background: #cc417e;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 12px;
-  margin: 22px;
+  padding-left: 16px;
+  margin: 40px 22px ;
+
 }
 
 .retreatN {
