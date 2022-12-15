@@ -7,29 +7,32 @@ block content
       div.info-row.id
         div.name Charmander
         div.right
-          div.hp 60HP
+          div.hp= hp
+          div.hpn= HP
           div.type
-          img.type(src=`/images/${card.type}.png`)
+            img.type(src=`/images/${type}.png`)
       div.pic-head
         div.picture
-          img.charmander(src='/images/charmander.png')
+          img.charmander(src=`/images/${poke_img}.png`)
       div.move1
         div.energy
-          img.entype(src=`/images/${card.type}.png`)
-        div.mName Ember
+          img.entype(src=`/images/${type}.png`)
+          img.entype(src=`/images/${type}.png`)
+          img.entype(src=`/images/${type}.png`)
+        div.mName=
         div.mDam 40
       div.move2
         div.energy2
-          img.entype(src=`/images/${card.type}.png`)
-        div.mName2 Quick Attack
+          img.entype(src=`/images/${type}.png`)
+        div.mName2=
         div.mDam2 50
       div.cardBottom
         div.weak
           div.weakN Weakness
-          img.wentype(src=`/images/${card.type}.png`)
+          img.wentype(src=`/images/${type}.png`)
         div.resistance
           div.resisN Resistance
-          img.bentype(src=`/images/${card.type}.png`)
+          img.bentype(src=`/images/${type}.png`)
         div.retreat
           div.retreatN Retreat
-          img.rentype(src=`/images/${card.type}.png`)
+          img.rentype(src=`/images/${type}.png`)
