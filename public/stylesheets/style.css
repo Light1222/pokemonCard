@@ -3,6 +3,12 @@ body {
   font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+.container {
+  padding: 48px;
+  display: flex;
+  gap: 16px;
+}
+
 .h1{
   font: 15px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -128,5 +134,15 @@ background: #cc417e;
 
 .retreatN {
   font: 13px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.edit {
+  width: 100%;
+  display: flex;
+}
+
+.edit a{
+  text-decoration: none;
+  color: #00B7FF;
 }
 
