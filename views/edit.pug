@@ -1,7 +1,6 @@
 extends layout
 
 block content
-    div.form-panel
         include mixins/pokemonForm
         +pokemonForm(pokemon, `/edit/${pokemon.id}`, 'edit', 'Edit Pokemon Card')
 

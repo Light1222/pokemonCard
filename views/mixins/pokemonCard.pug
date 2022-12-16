@@ -1,4 +1,4 @@
-mixin pokemoncard(pokemon)
+mixin pokemonCard(pokemon)
 
 div(class=`pokemon ${pokemon.type}`)
     div.info-row.id
@@ -7,10 +7,10 @@ div(class=`pokemon ${pokemon.type}`)
             div.hp= pokemon.hp
             div.hpn hp
             div.type
-                img.type(src=`/images/${pokemon.type}.png`)
+                img.type-top(src=`/images/${pokemon.type}.png`)
     div.pic-head
         div.picture
-            img.pic(src=`/images/${poke_img}.png`)
+            img.pic(src=`/images/${pokemon.poke_img}.png`)
     div.move1
         div.energy
             img.entype(src=`/images/${pokemon.mtype1}.png`)
@@ -23,7 +23,7 @@ div(class=`pokemon ${pokemon.type}`)
             img.entype(src=`/images/${pokemon.m2type1}.png`)
             img.entype(src=`/images/${pokemon.m2type2}.png`)
             img.entype(src=`/images/${pokemon.m2type3}.png`)
-        div.mName2= pokemon.m2name
+        div.m2name= pokemon.m2name
         div.d2= pokemon.d2
     div.cardBottom
         div.weak

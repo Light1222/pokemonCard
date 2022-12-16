@@ -1,4 +1,4 @@
-const {pokemon} = require('../models')
+const {Pokemon} = require('../models')
 const types = ['Bug', 'Electric', 'Fairy', 'Fire', 'Flying', 'Ghost', 'Grass', 'Ground', 'Ice', 'Normal', 'Poison', 'Psychic', 'Rock', 'Steel', 'Water']
 
 module.exports.viewAll = async function(req, res, next){
@@ -7,12 +7,12 @@ module.exports.viewAll = async function(req, res, next){
         findTypes.push(types[i]);
     }
     let pokemons;
-    let findType = req.query.type || 'All'
+    let findType = req.query.type || 'All';
     let findRandom = req.query.random || false;
     if (findType === 'All') {
-        pokemons = await pokemon.findAll();
+        pokemons = await Pokemon.findAll();
     } else {
-        pokemons = await pokemon.findAll({
+        pokemons = await Pokemon.findAll({
             where: {
                 type: findType
             }
@@ -26,10 +26,10 @@ module.exports.viewAll = async function(req, res, next){
 }
 
 module.exports.renderEditForm = async function(req, res, next) {
-    const Pokemon = await pokemon.findByPk(
+    const pokemon = await Pokemon.findByPk(
         req.params.id
-    )
-    res.render('edit', {Pokemon, types});
+    );
+    res.render('edit', {pokemon, types});
 }
 
 
@@ -44,7 +44,7 @@ module.exports.renderEditForm = async function(req, res, next) {
 
 
 module.exports.updatePokemonCard = async function(req,res) {
-    await pokemon.update(
+    await Pokemon.update(
         {
         name: req.body.name,
         hp: req.body.hp,
@@ -74,7 +74,7 @@ res.redirect('/');
 }
 
 module.exports.deletePokemonCard = async function(req,res) {
-    await pokemon.destroy(
+    await Pokemon.destroy(
         {
             where:
                 {
@@ -84,7 +84,7 @@ module.exports.deletePokemonCard = async function(req,res) {
     res.redirect('/')
 }
 
-module.exports.renderPokemonAddForm = async function(req,res) {
+module.exports.renderPokemonAddForm = function(req,res) {
     const pokemon = {
         name: "",
         hp: "",
@@ -108,7 +108,7 @@ module.exports.renderPokemonAddForm = async function(req,res) {
 }
 
 module.exports.addPokemonCard = async function(req, res) {
-    await pokemon.create(
+    await Pokemon.create(
         {
             name: req.body.name,
             hp: req.body.hp,
