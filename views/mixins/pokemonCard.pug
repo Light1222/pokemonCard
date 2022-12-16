@@ -1,37 +1,38 @@
 mixin pokemoncard(pokemon)
 
-
-div.card
+div(class=`pokemon ${pokemon.type}`)
     div.info-row.id
         div.name=pokemon.name
         div.right
             div.hp= pokemon.hp
-            div.hpn= HP
+            div.hpn hp
             div.type
                 img.type(src=`/images/${type}.png`)
     div.pic-head
         div.picture
-            img.charmander(src=`/images/${poke_img}.png`)
+            img.pic(src=`/images/${poke_img}.png`)
     div.move1
         div.energy
-            img.entype(src=`/images/${type}.png`)
-            img.entype(src=`/images/${type}.png`)
-            img.entype(src=`/images/${type}.png`)
-        div.mName=
-div.mDam 40
+            img.entype(src=`/images/${mtype1}.png`)
+            img.entype(src=`/images/${mtype2}.png`)
+            img.entype(src=`/images/${mtype3}.png`)
+        div.mname= pokemon.mname
+        div.d1= pokemon.d1
     div.move2
         div.energy2
-            img.entype(src=`/images/${type}.png`)
-        div.mName2=
-div.mDam2 50
+            img.entype(src=`/images/${m2type1}.png`)
+            img.entype(src=`/images/${m2type2}.png`)
+            img.entype(src=`/images/${m2type3}.png`)    
+        div.mName2= pokemon.m2name
+        div.d2= pokemon.d2
     div.cardBottom
         div.weak
             div.weakN Weakness
-            img.wentype(src=`/images/${type}.png`)
+            img.wentype(src=`/images/${wentype}.png`)
         div.resistance
             div.resisN Resistance
-            img.bentype(src=`/images/${type}.png`)
+            img.bentype(src=`/images/${bentype}.png`)
         div.retreat
             div.retreatN Retreat
-            img.rentype(src=`/images/${type}.png`)
+            img.rentype(src=`/images/${rentype}.png`)
 
