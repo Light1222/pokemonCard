@@ -8,13 +8,13 @@ router.get('/', cardController.viewAll);
 
 router.get('/', cardController.renderEditForm);
 
-router.get('/', cardController.updateCard);
+router.get('/', cardController.updatePokemonCard);
 
-router.get('/', cardController.deleteCard);
+router.get('/', cardController.deletePokemonCard);
 
-router.get('/', cardController.renderAddForm);
+router.get('/', cardController.renderPokemonAddForm);
 
-router.get('/', cardController.addCard);
+router.get('/', cardController.addPokemonCard);
 
 module.exports = router;
 

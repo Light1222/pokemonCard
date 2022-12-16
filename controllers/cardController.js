@@ -25,11 +25,11 @@ module.exports.viewAll = async function(req, res, next){
     res.render('index', {pokemons, types:findTypes, findType, findRandom} )
 }
 
-module.exports.updateCard = async function(req, res, next) {
-    const pokemon = await card.findByPk(
+module.exports.renderEditForm = async function(req, res, next) {
+    const pokemon = await pokemon.findByPk(
         req.params.id
     )
-    res.render('edit', {card, types});
+    res.render('edit', {pokemon, types});
 }
 
 
@@ -43,7 +43,7 @@ module.exports.updateCard = async function(req, res, next) {
 
 
 
-module.exports.updateCard = async function(req,res) {
+module.exports.updatePokemonCard = async function(req,res) {
     await pokemon.update(
         {
         name: req.body.name,
@@ -73,8 +73,8 @@ module.exports.updateCard = async function(req,res) {
 res.redirect('/');
 }
 
-module.exports.deleteCard = async function(req,res) {
-    await Card.destroy(
+module.exports.deletePokemonCard = async function(req,res) {
+    await pokemon.destroy(
         {
             where:
                 {
@@ -84,7 +84,7 @@ module.exports.deleteCard = async function(req,res) {
     res.redirect('/')
 }
 
-module.exports.renderAddForm = async function(req,res) {
+module.exports.renderPokemonAddForm = async function(req,res) {
     const pokemon = {
         name: "",
         hp: "",
@@ -107,7 +107,7 @@ module.exports.renderAddForm = async function(req,res) {
     res.render('add', {pokemon, types})
 }
 
-module.exports.addCard = async function(req, res) {
+module.exports.addPokemonCard = async function(req, res) {
     await pokemon.create(
         {
             name: req.body.name,
