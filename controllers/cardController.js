@@ -7,10 +7,10 @@ module.exports.viewAll = async function(req, res, next){
         findTypes.push(types[i]);
     }
     let pokemons;
-    let findType = req.query.type || all
+    let findType = req.query.type || 'All'
     let findRandom = req.query.random || false;
     if (findType === 'All') {
-        pokemons = await pokemon.findAll
+        pokemons = await pokemon.findAll();
     } else {
         pokemons = await pokemon.findAll({
             where: {
@@ -26,10 +26,10 @@ module.exports.viewAll = async function(req, res, next){
 }
 
 module.exports.renderEditForm = async function(req, res, next) {
-    const pokemon = await pokemon.findByPk(
+    const Pokemon = await pokemon.findByPk(
         req.params.id
     )
-    res.render('edit', {pokemon, types});
+    res.render('edit', {Pokemon, types});
 }
 
 

@@ -33,8 +33,8 @@ module.exports = (sequelize, DataTypes) => {
         rentype: DataTypes.STRING,
     }, {
         sequelize,
-        modelName: 'Card',
-        tableName: 'cards',
+        modelName: 'pokemon',
+        tableName: 'pokemon',
         timestamps: false
     });
     return pokemon;
