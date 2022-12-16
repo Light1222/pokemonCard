@@ -17,16 +17,63 @@ block content
                             option(value=type selected=(type === card.type)) #{type}
                 div.form.input
                     label(for='poke_img') Picture URL:
-                    input(type='text' id='poke_img' name='name' value=pokemon.name)
+                    input(type='text' id='poke_img' name='name' value=pokemon.poke_img)
                 div.form.input
-                    label(for='name') Name:
-                    input(type='text' id='name' name='name' value=pokemon.name)
+                    label(for='mtype1') Type Cost 1:
+                    input(type='text' id='mtype1' name='mtype1' autocomplete='off')
+                        each type in types
+                            option(value=type slected=(type === mtype1)) #{type}
                 div.form.input
-                    label(for='name') Name:
-                    input(type='text' id='name' name='name' value=pokemon.name)
+                    label(for='mtype2') Type Cost 2:
+                    input(type='text' id='mtype2' name='mtype2' autocomplete='off')
+                        each type in types
+                            option(value=type slected=(type === mtype2)) #{type}
                 div.form.input
-                    label(for='name') Name:
-                    input(type='text' id='name' name='name' value=pokemon.name)
+                    label(for='mtype3') Type Cost 3:
+                    input(type='text' id='mtype3' name='mtype3' autocomplete='off')
+                        each type in types
+                            option(value=type slected=(type === mtype3)) #{type}
                 div.form.input
-                    label(for='name') Name:
-                    input(type='text' id='name' name='name' value=pokemon.name)
+                    label(for='mname') mname:
+                    input(type='text' id='mname' name='mname' value=pokemon.mname)
+                div.form.input
+                    label(for='d1') d1:
+                    input(type='number' id='d1' name='d1' value=pokemon.d1)
+                div.form.input
+                    label(for='m2type1') Type Cost 1:
+                    input(type='text' id='m2type1' name='m2type1' autocomplete='off')
+                        each type in types
+                            option(value=type slected=(type === m2type1)) #{type}
+                div.form.input
+                    label(for='m2type2') Type Cost 2:
+                    input(type='text' id='m2type2' name='m2type2' autocomplete='off')
+                        each type in types
+                            option(value=type slected=(type === m2type2)) #{type}
+                div.form.input
+                    label(for='m2type3') Type Cost 3:
+                    input(type='text' id='m2type3' name='m2type3' autocomplete='off')
+                        each type in types
+                            option(value=type slected=(type === m2type3)) #{type}
+                div.form.input
+                    label(for='m2name') m2name:
+                    input(type='text' id='m2name' name='m2name' value=pokemon.m2name)
+                div.form.input
+                    label(for='d2') d2:
+                    input(type='number' id='d2' name='d2' value=pokemon.d2)
+                div.form.input
+                    label(for='wentype') Weakness:
+                    input(type='text' id='wentype' name='wentype' autocomplete='off')
+                        each type in types
+                            option(value=type slected=(type === wentype)) #{type}
+                div.form.input
+                    label(for='bentype') Resistance:
+                    input(type='text' id='bentype' name='bentype' autocomplete='off')
+                        each type in types
+                            option(value=type slected=(type === bentype)) #{type}
+                div.form.input
+                    label(for='rentype') Retreat:
+                    input(type='text' id='rentype' name='rentype' autocomplete='off')
+                        each type in types
+                            option(value=type slected=(type === rentype)) #{type}
+
+
