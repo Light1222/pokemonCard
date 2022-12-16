@@ -6,11 +6,9 @@ body {
 .container {
   padding: 48px;
   display: flex;
+  justify-content: space-between;
   gap: 16px;
-}
-
-.h1{
-  font: 15px "Lucida Grande", Helvetica, Arial, sans-serif;
+  flex-wrap: wrap;
 }
 
 .card{
@@ -32,10 +30,6 @@ body {
   padding-right: 4px;
 }
 
-.pic-head{
-
-}
-
 .pic {
   height: 150%;
   width: 100%;
@@ -53,7 +47,7 @@ body {
   width: 20px;
 }
 
-.rentype {
+.pokemon.rentype {
   height: 20px;
   width: 20px;
   align-items: center;
@@ -61,7 +55,7 @@ body {
   margin-top: 10px;
 }
 
-.wentype {
+.pokemon.wentype {
   height: 20px;
   width: 20px;
   align-items: center;
@@ -69,7 +63,7 @@ body {
   margin-top: 10px;
 }
 
-.bentype {
+.pokemon.bentype {
   height: 20px;
   width: 20px;
   align-items: center;
@@ -82,8 +76,64 @@ body {
   align-items: center;
 }
 
-.cardClassFairy {
+.pokemon.fairy {
 background: #cc417e;
+}
+
+.pokemon.bug {
+  background: #cc417e;
+}
+
+.pokemon.electric {
+  background: #cc417e;
+}
+
+.pokemon.fire {
+  background: #cc417e;
+}
+
+.pokemon.flying {
+  background: #cc417e;
+}
+
+.pokemon.ghost {
+  background: #cc417e;
+}
+
+.pokemon.grass {
+  background: #cc417e;
+}
+
+.pokemon.ground {
+  background: #cc417e;
+}
+
+.pokemon.ice {
+  background: #cc417e;
+}
+
+.pokemon.normal {
+  background: #cc417e;
+}
+
+.pokemon.poison {
+  background: #cc417e;
+}
+
+.pokemon.psychic {
+  background: #cc417e;
+}
+
+.pokemon.rock {
+  background: #cc417e;
+}
+
+.pokemon.steel {
+  background: #cc417e;
+}
+
+.pokemon.water {
+  background: #cc417e;
 }
 
 .move1{
@@ -136,9 +186,47 @@ background: #cc417e;
   font: 13px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+.form-input {
+  padding: 3px;
+}
+
 .edit {
   width: 100%;
   display: flex;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button {
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+.button.save {
+  background: green;
+  color: white;
+  border: 1px solid black;
+}
+
+.button.cancel {
+  background: black;
+  color: white;
+  border: 1px solid white;
+}
+
+.button.delete {
+  background: red;
+  color: white;
+  border: 1px solid black;
+}
+
+.add-button-row {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .edit a{
